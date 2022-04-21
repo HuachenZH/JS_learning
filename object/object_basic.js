@@ -12,5 +12,23 @@ const dog={
 // to affect a value to a key, we use : but not =
 // it's ok to not to put "" for keys (if there is no white spaces)
 
+// get the value of a property, enemies
+dog.enemies;
+dog["enemies"];
 
+//change a property
+dog.name="Beibei"; //my dog's true name
+dog.friends.push("gege");
+dog.enemies.unshift('vet');
+
+//add properties
+dog.species="puddle";
+dog['family']='small dog';
+
+// delete properties
+delete dog.family
+delete dog['family']
+
+
+console.log(dog);
 

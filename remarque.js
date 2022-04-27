@@ -5,3 +5,5 @@ gs.info(name);
 // this work with the instance of serviceNow, it will return: x_803884_test1: Michael Jackson
 // and this does not work with my local nodejs
 
+// gs stands for glide system, which provides a number of convenient methods to get information about the system, the current logged in user, etc.
+// cheatsheet: https://servicenowguru.com/scripting/user-object-cheat-sheet/

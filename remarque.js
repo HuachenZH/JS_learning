@@ -13,13 +13,18 @@ gs.info(name);
 
 // when i forgot the () of .toString()
 var out=4;
-console.log(out.toString) // it shows: [Function: toString]
-console.log(typeof out.toString) // it shows: function
+console.log(out.toString); // it shows: [Function: toString]
+console.log(typeof out.toString); // it shows: function
 // the correct syntax should be:
-console.log(typeof out.toString()+out.toString())
+console.log(typeof out.toString()+out.toString());
 
 
 
+// priority
+var num=64;
+var str='63';
+console.log(typeof num+parseFloat(str)); // number63
+console.log(typeof (num+parseFloat(str))); // number
 
 
 

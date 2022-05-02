@@ -7,3 +7,20 @@ gs.info(name);
 
 // gs stands for glide system, which provides a number of convenient methods to get information about the system, the current logged in user, etc.
 // cheatsheet: https://servicenowguru.com/scripting/user-object-cheat-sheet/
+
+
+
+
+// when i forgot the () of .toString()
+var out=4;
+console.log(out.toString) // it shows: [Function: toString]
+console.log(typeof out.toString) // it shows: function
+// the correct syntax should be:
+console.log(typeof out.toString()+out.toString())
+
+
+
+
+
+
+

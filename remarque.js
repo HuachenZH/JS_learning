@@ -27,5 +27,10 @@ console.log(typeof num+parseFloat(str)); // number63
 console.log(typeof (num+parseFloat(str))); // number
 
 
-
+// use of {} in an if statement
+var a=1;
+var b=2;
+if (a<b) // "if" only cover the next line, if there is no {}. The same for "else"
+	console.log('you can see me when the statement is true')
+console.log('you can always see me, no matter the statement if true of false')
 

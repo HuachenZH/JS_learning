@@ -16,6 +16,15 @@
     if (n <= 0) { // this is called a base case. In a recursive function, we always need a base case to stop the iteration
       return 1;
     } else {
-      return multiply(arr, n - 1) * arr[n - 1];
+      return multiply(arr, n - 1) * arr[n - 1]; // the importance here is the "*"
+    }
+  }
+
+// exercice: sum up the n first element of an array
+  function sum(arr, n) {
+    if(n<=0) {
+      return 0 // it's not correct with return 1
+    }else {
+      return sum(arr,n-1)+arr[n-1];
     }
   }

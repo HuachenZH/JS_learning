@@ -31,3 +31,8 @@ if(boolString=='true'){
 }else{
   boolbool=false;
 }
+
+// for numbers:
+var num=0;
+console.log(num+' is '+(num?'true':'false'));
+// the result will always be false when num is 0. In all other cases, the result will be true.

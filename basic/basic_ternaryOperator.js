@@ -36,3 +36,6 @@ if(boolString=='true'){
 var num=0;
 console.log(num+' is '+(num?'true':'false'));
 // the result will always be false when num is 0. In all other cases, the result will be true.
+// or rather:
+var num=0;
+console.log(num?'num is not 0':'num is 0');

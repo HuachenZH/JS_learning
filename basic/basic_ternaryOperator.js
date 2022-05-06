@@ -39,3 +39,13 @@ console.log(num+' is '+(num?'true':'false'));
 // or rather:
 var num=0;
 console.log(num?'num is not 0':'num is 0');
+
+// for strings:
+var string1;
+var string2=null;
+var string3='a';
+console.log(string1?'true':'false'); // false
+console.log(string2?'true':'false'); // false
+console.log(string3?'true':'false'); // true
+// or rather:
+console.log(string3?'this string has something valide':'this is string has nothing')

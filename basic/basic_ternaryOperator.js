@@ -15,7 +15,19 @@ var openStatusString=(valveOpen)?'open':'closed';
 //                                  ^             true in this case
 //                                          ^     false in this case
 console.log(openStatusString)
-
+// another example
 var boolean=true;
 var out=boolean?'this is true':'this is false';
 console.log(out)
+
+
+// another use:
+var boolString='true';
+var boolbool=(boolString=='true')? true:false;
+console.log(boolbool)
+// this equals to:
+if(boolString=='true'){
+  boolbool=true;
+}else{
+  boolbool=false;
+}

@@ -49,3 +49,16 @@ list.forEach((item,index)=>console.log('item is '+item+', index is '+index)); //
 // item is 11, index is 5
 // item is 13, index is 6
 // item is 17, index is 7
+
+
+// third argument: arr, the orignal array
+var list = [1,2,3,5,7,11,13,17];
+list.forEach((item,index,arr)=>console.log('item is '+item+', index is '+index+', the original array is '+arr)); // output:
+// item is 1, index is 0, the original array is 1,2,3,5,7,11,13,17
+// item is 2, index is 1, the original array is 1,2,3,5,7,11,13,17
+// item is 3, index is 2, the original array is 1,2,3,5,7,11,13,17
+// item is 5, index is 3, the original array is 1,2,3,5,7,11,13,17
+// item is 7, index is 4, the original array is 1,2,3,5,7,11,13,17
+// item is 11, index is 5, the original array is 1,2,3,5,7,11,13,17
+// item is 13, index is 6, the original array is 1,2,3,5,7,11,13,17
+// item is 17, index is 7, the original array is 1,2,3,5,7,11,13,17

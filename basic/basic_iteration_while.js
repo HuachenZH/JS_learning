@@ -29,3 +29,17 @@ while(true){
   console.log(i);
   i++;
 }
+
+// continue;
+var i=0;
+var list=[];
+var done=false;
+while(!done){
+  if(i<8){
+    list.push(i);
+    i++;
+    continue; // stop the loop right here, do not proceed any furthur, jump back up and start the loop again
+  }
+  done=true;
+  console.log(list);
+}

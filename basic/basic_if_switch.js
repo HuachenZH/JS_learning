@@ -35,3 +35,22 @@ switch(bits){
     niveau='error' // default doesn't require break here, as it's at the end. 
 }
 console.log('niveau: '+niveau)
+
+// lab 3
+
+var language='english';
+var out='chinese';
+switch(language){
+  case 'english':
+    out='hello world';
+    break;
+  case 'french':
+    out='bonjour le monde';
+    break;
+  case 'chinese':
+    out='你好世界';
+    break;
+  default:
+    out='error'
+}
+console.log(out)

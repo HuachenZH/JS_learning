@@ -24,3 +24,11 @@ var tmp=myArray.pop(); //remove the last element and save the value into variabl
 // like .pop() but with the first element 
 var tmp=myArray.shift(); // remove the first element and save the value into tmp. myArray will be: [ 3 ]. tmp=2
 
+
+// https://www.youtube.com/watch?v=XjCUomzmtD8&list=PL3rNcyAiDYK2_87aRvXEmAyD8M9DARVGK&index=29
+// we can also create an array in this way:
+var list=[];
+list[0]=0;
+list[2]=2;
+list[3]=NaN;
+console.log(list); // [ 0, <1 empty item>, 2, NaN ]

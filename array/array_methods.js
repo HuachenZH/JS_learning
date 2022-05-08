@@ -43,32 +43,46 @@ list.splice(4,0,'avril','mai'); // add new elements from 4, after 3
 console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 4, 5, 6, 7 ]
 
 // to replace elements
-// case 1: (replace one element, add a new element)
-var list=[0,1,2,3,4,5,6,7];
-list.splice(4,1,'avril','mai'); // replace one element from 4
-console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 5, 6, 7 ]
-// only replace one element, so 4 is replaced, 5 is still here. 'mai' is inserted as a new element
+  // case 1: (replace one element, add a new element)
+  var list=[0,1,2,3,4,5,6,7];
+  list.splice(4,1,'avril','mai'); // replace one element from 4
+  console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 5, 6, 7 ]
+  // only replace one element, so 4 is replaced, 5 is still here. 'mai' is inserted as a new element
 
-// case 2: (replace two elements, no new elements added)
-var list=[0,1,2,3,4,5,6,7];
-list.splice(4,1,'avril','mai'); // replace two elements from 4
-console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 6, 7 ]
-// replace two elements, so 4 and 5 are replaced. 
+  // case 2: (replace two elements, no new elements added)
+  var list=[0,1,2,3,4,5,6,7];
+  list.splice(4,1,'avril','mai'); // replace two elements from 4
+  console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 6, 7 ]
+  // replace two elements, so 4 and 5 are replaced. 
 
-// case 3: (replace two elements and remove one element)
-var list=[0,1,2,3,4,5,6,7];
-list.splice(4,3,'avril','mai'); 
-console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 7 ]
-// 4 and 5 are replaced, 6 is removed
+  // case 3: (replace two elements and remove one element)
+  var list=[0,1,2,3,4,5,6,7];
+  list.splice(4,3,'avril','mai'); 
+  console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 7 ]
+  // 4 and 5 are replaced, 6 is removed
 
 // to remove elements:
-// case 1: (remove all)
-var list=[0,1,2,3,4,5,6,7];
-list.splice(4); // remove all elements after index 4 (inclusive)
-console.log(list); // [ 0, 1, 2, 3 ]
+  // case 1: (remove all)
+  var list=[0,1,2,3,4,5,6,7];
+  list.splice(4); // remove all elements after index 4 (inclusive)
+  console.log(list); // [ 0, 1, 2, 3 ]
 
-// case 2: (remove part)
-var list=[0,1,2,3,4,5,6,7];
-list.splice(4,3); // from 4 (inclusive), remove three elements
-console.log(list); // [ 0, 1, 2, 3, 7 ]
-// 4, 5, 6 these three elemnents are removed
+  // case 2: (remove part)
+  var list=[0,1,2,3,4,5,6,7];
+  list.splice(4,3); // from 4 (inclusive), remove three elements
+  console.log(list); // [ 0, 1, 2, 3, 7 ]
+  // 4, 5, 6 these three elemnents are removed
+
+
+// --------------------------------------------------------------------------------------------------------------
+// slice
+// The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+var names = ["Eric", "Donna", "Melanie", "Jessie", "Howard", "Tomasz"];
+gs.info(names.join(', ')); // Eric, Donna, Melanie, Jessie, Howard, Tomasz
+var subnames=names.slice(1, 4); // slice the array names, from index one to index four not included. Save to a new variable subnames
+gs.info(subnames.join(' ')); // Donna Melanie Jessie
+gs.info(names.join(', ')); // Eric, Donna, Melanie, Jessie, Howard, Tomasz. This shows that the original array, names, is not modified
+
+
+

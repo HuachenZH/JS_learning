@@ -76,6 +76,7 @@ console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 4, 5, 6, 7 ]
 
 // --------------------------------------------------------------------------------------------------------------
 // slice
+// slice(start, end)
 // The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 var names = ["Eric", "Donna", "Melanie", "Jessie", "Howard", "Tomasz"];
@@ -85,4 +86,12 @@ gs.info(subnames.join(' ')); // Donna Melanie Jessie
 gs.info(names.join(', ')); // Eric, Donna, Melanie, Jessie, Howard, Tomasz. This shows that the original array, names, is not modified
 
 
-
+// ----------------------------------------------------------------------------------------------------------------
+// reverse
+// reverse()  no parameters
+// The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
+// so the original array is modified
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+var list=[0,1,2,3,4];
+list.reverse(); // list is modified
+gs.info(list); //  4,3,2,1,0

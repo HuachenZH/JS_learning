@@ -29,3 +29,15 @@ var pos = str.indexOf('RITM');
 console.log('RITM0010001'.length); // its length is 11
 var ritmNumber = str.substring(pos, pos + 11);
 console.log(ritmNumber); // it returns : RITM0010001
+
+
+// .toUpperCase() and .toLowerCase()
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+// returns the value of the string converted to uppercase. This method does not affect the value of the string itself since JavaScript strings are immutable.
+// .toUpperCase()  // no parameter
+var firstname='Chuck';
+firstname.toLowerCase();
+console.log(firstname); // Chuck
+console.log(firstname.toLowerCase()); // chuck
+
+

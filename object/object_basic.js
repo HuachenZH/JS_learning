@@ -32,3 +32,13 @@ delete dog['family']
 
 console.log(dog);
 
+// looping in an object
+var vehicle = {
+  "year" : 2018,
+  "make"  : "Toyota",
+  "model" : "Sienna"
+};
+for(var cle in vehicle){ // when we iterate in an object, we iterate by its key
+  console.log('key='+cle);
+  console.log('value='+vehicle[cle]);
+}

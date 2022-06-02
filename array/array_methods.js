@@ -51,7 +51,7 @@ console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 4, 5, 6, 7 ]
 
   // case 2: (replace two elements, no new elements added)
   var list=[0,1,2,3,4,5,6,7];
-  list.splice(4,1,'avril','mai'); // replace two elements from 4
+  list.splice(4,2,'avril','mai'); // replace two elements from 4
   console.log(list); // [ 0, 1, 2, 3, 'avril', 'mai', 6, 7 ]
   // replace two elements, so 4 and 5 are replaced. 
 
